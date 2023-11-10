@@ -1,4 +1,4 @@
-Title:  Collaboration Analysis
+Title:  Youtube Collaboration Analysis
 
 Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
 
