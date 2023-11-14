@@ -1,3 +1,2 @@
-*.csv
-*.tsv
-*.jsonl
+data/climate_videos_new.jsonl
+data/nb_videos_by_date.jsonl
