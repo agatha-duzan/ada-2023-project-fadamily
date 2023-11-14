@@ -2,16 +2,14 @@
 from typing import Literal
 from time import perf_counter
 from transformers import pipeline
-import tqdm
-
-
-# lxyuan/distilbert-base-multilingual-cased-sentiments-student
 
 
 class SentimentAnalysis:
     def __init__(self):
-        self.pipe = pipeline("text-classification",
-                             model="lxyuan/distilbert-base-multilingual-cased-sentiments-student")
+        self.pipe = pipeline(
+            task="text-classification",
+            model="lxyuan/distilbert-base-multilingual-cased-sentiments-student"
+        )
 
     def get_sentiment(self, text: str) -> Literal['positive', 'negative', 'neutral']:
         return self.pipe(text)[0]['label']
@@ -37,9 +35,6 @@ if __name__ == '__main__':
     print(sa.get_sentiment_batch(texts))
     t2 = perf_counter()
 
-    print(f"Single: {t1 - t0}")
-    print(f"Batch: {t2 - t1}")
-    print(f"Batch per iter: {(t2 - t1) / len(texts)}")
-
-
-
+    print(f"Single compute time: {t1 - t0}")
+    print(f"Batch compute time: {t2 - t1}")
+    print(f"Batch per iter compute time: {(t2 - t1) / len(texts)}")
