@@ -6,14 +6,13 @@ Climate change is a hot topic that needs to draw people's attention more than ev
 
 
 ## Research questions
-We would like to answer several research questions from basic trend analysis to more specific:
+
 - Did climate change become a more important topic on YouTube as it became a very important matter in our societies?
-    - Evolution of the number of videos about climate change (and proportion)
-    - Evolution of the number of views of these videos
+    - Evolution of the views & number of videos about climate change (and proportion)
     - Look also at these only in relevant categories (News, politics, education)
     - Category wise: are now all categories affected?
     - Channel wise: are many channels taking over this topic ?
-- YouTube as a reflect of society: can we relate spikes in the interest in climate change on YouTube with real word events? (Cop 21, climate related natural disaster…)
+- YouTube as a reflect of society: can we relate spikes in the interest in climate change on YouTube with real word events?
 - How popular are videos/channels about climate change compared to overall videos/channels?
 - Did some channels experience growth thanks to videos about climate change?
 - What is a popular video about climate change:
