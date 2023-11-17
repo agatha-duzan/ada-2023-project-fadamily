@@ -36,8 +36,13 @@ The resulting, more reasonable sized, filtered dataset can be found on this goog
 
 #### Pre-processing
 
+Our primary objective was to analyze YouTube videos associated with climate change, and the initial step involved filtering our extensive dataset to focus solely on pertinent content.
+To achieve this, we curated a meticulous list of 41 keywords that exhibited the closest relevance to climate change. Deliberately, we opted for two-word keywords, aiming to optimize the correlation between a keyword's presence and the video's subject matter. Subsequently, we conducted scans within the dataset, examining whether these selected keywords were present in the video titles, tags, or descriptions. It was essential to ensure a singular count for each keyword, regardless of its multiple occurrences across different sections. Our criterion for considering a video as addressing the subject of climate change was if any of the chosen keywords appeared in the title, tags, or description.
 
-#### Refinement of Filtering Criteria
+Leveraging Spark due to the dataset's magnitude, we executed this filtering process efficiently. Upon completion, we stored the refined dataset containing videos pertinent to climate change locally for further analysis and study.
+
+#### Filtering refinement
+
 During our analysis, we encountered a significant issue related to video selection based on keywords. We noticed that merely selecting videos with specific keywords occasionally led us to include content not directly addressing climate change. For instance, a video might mention a keyword in its title, description, or tags, but discuss an unrelated topic—such as gaming scenarios involving a post-apocalyptic world or discussions about dandruff exacerbated by weather conditions like winter.
 We found certain keywords to be more indicative of relevant content. Videos containing the phrase 'climate change' were more likely to genuinely address the topic compared to instances of 'pollution,' which might be tangentially related. Additionally, the category of the video influenced its accuracy; videos categorized under 'Science & Technology' were more likely to be on-topic than those under 'gaming,' 'sport,' or 'music.'
 Moreover, we observed that the placement of keywords within the title, tags, or description affected their relevance differently. Notably, descriptions often contain varied subject matter, potentially diverging from the video's main theme.
