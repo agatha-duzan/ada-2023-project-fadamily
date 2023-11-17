@@ -51,7 +51,6 @@ Furthermore, we attributed weights to titles, tags, and descriptions. When a key
 Additionally, we established a category-weight dictionary. A video must attain a higher score than its category's requirement to be retained in the selection process.
 By manipulating these parameters and conducting numerous random sampling experiments, we iteratively refined our filter. We are currently undergoing further analysis using p-value assessments to identify the most effective parameters. The numerical values present in the code may evolve as part of our ongoing effort to enhance our filtering methodology.
 
-
 ### Analysis
 
 
