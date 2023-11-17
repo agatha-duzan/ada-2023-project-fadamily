@@ -37,7 +37,7 @@ The resulting, more reasonable sized, filtered dataset can be found on this goog
 #### Pre-processing
 
 
-### Refinement of Filtering Criteria
+#### Refinement of Filtering Criteria
 During our analysis, we encountered a significant issue related to video selection based on keywords. We noticed that merely selecting videos with specific keywords occasionally led us to include content not directly addressing climate change. For instance, a video might mention a keyword in its title, description, or tags, but discuss an unrelated topic—such as gaming scenarios involving a post-apocalyptic world or discussions about dandruff exacerbated by weather conditions like winter.
 We found certain keywords to be more indicative of relevant content. Videos containing the phrase 'climate change' were more likely to genuinely address the topic compared to instances of 'pollution,' which might be tangentially related. Additionally, the category of the video influenced its accuracy; videos categorized under 'Science & Technology' were more likely to be on-topic than those under 'gaming,' 'sport,' or 'music.'
 Moreover, we observed that the placement of keywords within the title, tags, or description affected their relevance differently. Notably, descriptions often contain varied subject matter, potentially diverging from the video's main theme.
