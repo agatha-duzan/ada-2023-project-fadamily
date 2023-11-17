@@ -2,8 +2,7 @@
 
 ## Abstract
 
-Social media posts often reflect popular concepts in the world, which can represent themselves as hashtags or tags. Using the YouNiverse dataset, we examine the characteristics of tags on YouTube, a 
-Research Question
+Climate change is a hot topic that needs to draw people's attention more than ever. Using the YouNiverse dataset, we observe the influence of the topic in YouTube’s videos. The ladder being a social media, its data reflects the interest of its users and with the analysis of climate change, we are able to examine the emergence of people awareness' on environment. In our analysis, we compare view’s pics of videos and particular events such as a natural disaster or political decision at that moment to make a connection between the two. We also look at the viral videos on climate change et analyse what subject related to the environment people are the most sensitive with.
 
 This project aims to investigate the following research questions:
 
