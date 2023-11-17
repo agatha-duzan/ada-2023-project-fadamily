@@ -1,3 +1,4 @@
 data/climate_videos_new.jsonl
 data/nb_videos_by_date.jsonl
 /data/
+.DS_Store
