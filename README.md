@@ -36,7 +36,7 @@ The resulting, more reasonable sized, filtered dataset can be found on this goog
 
 #### Pre-processing
 
-Our primary objective was to analyze YouTube videos associated with climate change, and the initial step involved filtering our extensive dataset to focus solely on pertinent content.
+The primary objective is to analyze YouTube videos associated with climate change, and the initial step involved filtering the extensive dataset to focus solely on pertinent content.
 To achieve this, we curated a meticulous list of 41 keywords that exhibited the closest relevance to climate change. Deliberately, we opted for two-word keywords, aiming to optimize the correlation between a keyword's presence and the video's subject matter. Subsequently, we conducted scans within the dataset, examining whether these selected keywords were present in the video titles, tags, or descriptions. It was essential to ensure a singular count for each keyword, regardless of its multiple occurrences across different sections. Our criterion for considering a video as addressing the subject of climate change was if any of the chosen keywords appeared in the title, tags, or description.
 
 Leveraging Spark due to the dataset's magnitude, we executed this filtering process efficiently. Upon completion, we stored the refined dataset containing videos pertinent to climate change locally for further analysis and study.
