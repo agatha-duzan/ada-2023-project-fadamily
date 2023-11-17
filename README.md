@@ -2,17 +2,17 @@
 
 ## Abstract
 
-Climate change is a hot topic that needs to draw people's attention more than ever. Using the YouNiverse dataset, we observe the influence of the topic in YouTube’s videos. As any social media, YouTube's data reflects the interest of its users and with the analysis of climate change, we are able to examine the emergence of people awareness' on environment. In our analysis, we compare view peaks of climate change related videos and particular events such as a natural disaster or political decision at that moment to make a connection between the two. We also look at the viral videos on climate change and analyse what subject related to the environment people are the most sensitive to.
+Climate change is a hot topic that needs to draw people's attention more than ever. Using the YouNiverse dataset, we observe the influence of the topic in YouTube’s videos. As any social media, YouTube's data reflects the interest of its users and with the analysis of climate change, we can examine the emergence of people awareness' on environment. In our analysis, we compare view peaks of climate change related videos and particular events such as a natural disaster or political decision at that moment to make a connection between the two. We also look at the viral videos on climate change and analyse what subject related to the environment people are the most sensitive to.
 
 
 ## Research questions
 
-- Did climate change become a more important topic on YouTube as it became a very important matter in our societies?
+- Did climate change become a topic more important on YouTube as it has become in our society?
     - Evolution of the views & number of videos about climate change (and proportion)
     - Look also at these only in relevant categories (News, politics, education)
     - Category wise: are now all categories affected?
     - Channel wise: are many channels taking over this topic ?
-- YouTube as a reflect of society: can we relate spikes in the interest in climate change on YouTube with real word events?
+- Can we relate spikes in the interest in climate change on YouTube with real word events?
 - How popular are videos/channels about climate change compared to overall videos/channels?
 - Did some channels experience growth thanks to videos about climate change?
 - What is a popular video about climate change:
@@ -43,11 +43,11 @@ Leveraging Spark due to the dataset's magnitude, we executed this filtering proc
 #### Filtering refinement
 
 During our analysis, we encountered a significant issue related to video selection based on keywords. We noticed that merely selecting videos with specific keywords occasionally led us to include content not directly addressing climate change. For instance, a video might mention a keyword in its title, description, or tags, but discuss an unrelated topic—such as gaming scenarios involving a post-apocalyptic world or discussions about dandruff exacerbated by weather conditions like winter.
-We found certain keywords to be more indicative of relevant content. Videos containing the phrase 'climate change' were more likely to genuinely address the topic compared to instances of 'pollution,' which might be tangentially related. Additionally, the category of the video influenced its accuracy; videos categorized under 'Science & Technology' were more likely to be on-topic than those under 'gaming,' 'sport,' or 'music.'
-Moreover, we observed that the placement of keywords within the title, tags, or description affected their relevance differently. Notably, descriptions often contain varied subject matter, potentially diverging from the video's main theme.
-To address these challenges, we devised a new filtering method specifically aimed at identifying videos focusing primarily on climate change. This involved assigning a weight from 1 to 5 to each keyword. A weight of 1 signifies a low probability of the video covering climate change upon mentioning the keyword, while a weight of 5 indicates high odds of climate change being the discussed topic. 
-Furthermore, we attributed weights to titles, tags, and descriptions. We ensured that each keyword was counted only once, regardless of its multiple occurrences. Additionally, we prioritized the location of the keyword (title, tag, or description) by arranging them in descending order of weight. If a keyword appeared in both the title and the description, we only considered it from the title for accuracy assessment.
-Finally, we established a category-weight dictionary. A video must attain a higher score than its category's requirement to be retained in the selection process.
+We found certain keywords to be more indicative of relevant content. Videos containing the phrase 'climate change' were more likely to genuinely address the topic compared to instances of 'pollution,' which might be tangentially related. Additionally, the category of the video influenced its accuracy; videos categorized under 'Science & Technology' were more likely to be on-topic than those under 'gaming,' 'sport,' or 'music'. Finally, we observed that the placement of keywords within the title, tags, or description affected their relevance differently. Notably, descriptions often contain varied subject matter, potentially diverging from the video's main theme.
+To address these challenges, we devised a new filtering method that involved assigning:
+- a weight from 1 to 5 to each keyword: A weight of 1 signifies a low probability of the video covering climate change upon mentioning the keyword, while a weight of 5 indicates high odds of climate change being the discussed topic. 
+- a weight to the title(3), tags(2), and descriptions(1): If a keyword appeared in both the title and the description, we only considered it from the title for accuracy assessment.
+- a category-weight dictionary. A video must attain a higher score than its category's requirement to be retained in the selection process.
 By manipulating these parameters and conducting numerous random sampling experiments, we iteratively refined our filter. We are currently undergoing further analysis using p-value assessments to identify the most effective parameters. The numerical values present in the code may evolve as part of our ongoing effort to enhance our filtering methodology.
 
 ### Analysis
