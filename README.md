@@ -37,6 +37,16 @@ The resulting, more reasonable sized, filtered dataset can be found on this goog
 #### Pre-processing
 
 
+### Refinement of Filtering Criteria
+During our analysis, we encountered a significant issue related to video selection based on keywords. We noticed that merely selecting videos with specific keywords occasionally led us to include content not directly addressing climate change. For instance, a video might mention a keyword in its title, description, or tags, but discuss an unrelated topic—such as gaming scenarios involving a post-apocalyptic world or discussions about dandruff exacerbated by weather conditions like winter.
+We found certain keywords to be more indicative of relevant content. Videos containing the phrase 'climate change' were more likely to genuinely address the topic compared to instances of 'pollution,' which might be tangentially related. Additionally, the category of the video influenced its accuracy; videos categorized under 'Science & Technology' were more likely to be on-topic than those under 'gaming,' 'sport,' or 'music.'
+Moreover, we observed that the placement of keywords within the title, tags, or description affected their relevance differently. Notably, descriptions often contain varied subject matter, potentially diverging from the video's main theme.
+To address these challenges, we devised a new filtering method specifically aimed at identifying videos focusing primarily on climate change. This involved assigning a weight from 1 to 5 to each keyword, measuring the likelihood that the video addresses climate change. A weight of 1 signifies a low probability of the video covering climate change upon mentioning the keyword, while a weight of 5 indicates high odds of climate change being the discussed topic.
+Furthermore, we attributed weights to titles, tags, and descriptions. When a keyword appeared in the title, its weight was multiplied by the respective weight assigned to that location. We ensured that each keyword was counted only once, regardless of its multiple occurrences. Additionally, we prioritized the location of the keyword (title, tag, or description) by arranging them in descending order of weight. If a keyword appeared in both the title and the description, we only considered it from the title for accuracy assessment.
+Additionally, we established a category-weight dictionary. A video must attain a higher score than its category's requirement to be retained in the selection process.
+By manipulating these parameters and conducting numerous random sampling experiments, we iteratively refined our filter. We are currently undergoing further analysis using p-value assessments to identify the most effective parameters. The numerical values present in the code may evolve as part of our ongoing effort to enhance our filtering methodology.
+
+
 ### Analysis
 
 
