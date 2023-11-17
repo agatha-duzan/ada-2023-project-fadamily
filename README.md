@@ -53,7 +53,9 @@ By manipulating these parameters and conducting numerous random sampling experim
 
 ### Analysis
 
-
+After acquiring our filtered dataset, our focus shifted towards investigating potential correlations between news or global events and public interest in the climate change topic on YouTube. We based our study on the ratio of uploaded videos specifically addressing climate change from 2010 to 2019.
+Our analyses were conducted across various timeframes: daily, weekly, and monthly rates of video uploads. These analyses were instrumental in identifying trends. Notably, we observed substantial volatility in these plots, highlighting distinct periods where the rate of videos addressing climate change surged, sometimes reaching tenfold increases.
+To establish connections between these peaks and significant events, we identified the ten most pivotal climate events between 2010 and 2019, as identified by ChatGPT, ensuring their authenticity. This comparative analysis enabled us to assess their impact on social media, particularly YouTube. Additionally, this approach allowed us to rank these events based on their influence, as depicted by the number of uploaded videos, and to discover the most impactful event according to YouTube uploads.
 
 ## Proposed Timeline & Task Delivery Dates
 17/11/2023 - Deliver milestone 2
