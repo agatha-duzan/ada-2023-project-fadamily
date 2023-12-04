@@ -1,4 +1,4 @@
-data/climate_videos_new.jsonl
-data/nb_videos_by_date.jsonl
-/data/
+data/climate_videos.jsonl
+data/refine_filtered_videos.jsonl
 .DS_Store
+__pycache__/
