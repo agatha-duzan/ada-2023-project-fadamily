@@ -1,4 +1,5 @@
 data/climate_videos.jsonl
 data/refine_filtered_videos.jsonl
+data/video_title_sentiment_analysis.csv
 .DS_Store
 __pycache__/
