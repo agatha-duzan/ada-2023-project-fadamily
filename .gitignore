@@ -1,6 +1,9 @@
 data/climate_videos.jsonl
 data/refine_filtered_videos.jsonl
+data/climate_videos_classified.jsonl
 data/video_title_sentiment_analysis.csv
 data/sampled_dataset_1percent.jsonl
+safety_saves/*
 .DS_Store
 __pycache__/
+silent-circlet-407818-8bcb92199b3e.json
