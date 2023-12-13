@@ -3,6 +3,7 @@ data/refine_filtered_videos.jsonl
 data/climate_videos_classified.jsonl
 data/video_title_sentiment_analysis.csv
 data/sampled_dataset_1percent.jsonl
+data/climate_videos_v3.jsonl
 safety_saves/*
 .DS_Store
 __pycache__/
