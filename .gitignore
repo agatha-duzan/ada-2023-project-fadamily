@@ -7,3 +7,4 @@ safety_saves/*
 .DS_Store
 __pycache__/
 silent-circlet-407818-8bcb92199b3e.json
+collab_analysis/
