@@ -7,7 +7,7 @@ import time
 import numpy as np
 from tqdm import tqdm
 
-async def classify(text,  client=language_client):
+async def classify(text,  client):
     """Classify the input text into categories."""
 
 
