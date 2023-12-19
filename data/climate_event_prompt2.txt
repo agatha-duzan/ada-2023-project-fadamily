@@ -1,0 +1,1 @@
+Imagine you are a journalist. Make a list of  the top 20 mediated climate change related events which occurred between 2010 and 2019. Give your answer in the following CSV format (date, event_name, short_description).
