@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 def restrict_time_period(df, start_date='2010', end_date='2019-09-29'):
-    return df[(df.index >= pd.to_datetime(start_date)) & (df.index < pd.to_datetime(end_date))]
+    return df[(df.index > pd.to_datetime(start_date)) & (df.index < pd.to_datetime(end_date))]
 
 def get_linear_fit(series: pd.Series) -> np.ndarray:
     x = np.arange(len(series))

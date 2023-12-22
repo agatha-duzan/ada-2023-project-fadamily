@@ -1,5 +1,9 @@
 # Climate change on YouTube: evolution, trends and influences / ada-2023-project-fadamily
 
+## Website link:
+
+https://agatha-duzan.github.io/
+
 ## Abstract
 
 Climate change is a hot topic that needs to draw people's attention more than ever. Using the YouNiverse dataset, we observe the influence of the topic in YouTube’s videos. As any social media, YouTube's data reflects the interest of its users and with the analysis of climate change, we can examine the emergence of people awareness' on environment. In our analysis, we compare view peaks of climate change related videos and particular events such as a natural disaster or political decision at that moment to make a connection between the two. We also look at the viral videos on climate change and analyse what subject related to the environment people are the most sensitive to.
@@ -69,12 +73,12 @@ To establish connections between these peaks and significant events, we identifi
 22/12/2023 - Deliver milestone 3
 
 ## Team Organisation
-Sébastien: data story and influence graph
+Sébastien: data story, influence graph and tag analysis
 
-Agatha: data story and time series analysis
+Agatha: data story, time series analysis and website set up
 
-Maxime: data story and advanced filtering
+Maxime: data story, advanced filtering, web site set up
 
-Paul: data story and sentiment analysis
+Paul: data story, sentiment analysis and categories of climate change videos
 
-Nastasia: data story and event correlation
+Nastasia: data story, event correlation and difference between climate change and not climate change videos
