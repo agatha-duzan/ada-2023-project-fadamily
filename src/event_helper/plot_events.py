@@ -16,7 +16,7 @@ def plot_events(ax, df: pd.DataFrame):
         ax.axvline(x=date, alpha=0.5)
 
 
-def read_and_plot_events(data: pd.DataFrame, ax, file_path: str = 'data/climate_events.csv'):
+def read_and_plot_events(data: pd.DataFrame, ax, file_path: str = 'data/climate_events_v2.csv'):
     df = read_events(data, file_path)
     plot_events(ax, df)
 
