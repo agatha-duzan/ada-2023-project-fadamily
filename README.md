@@ -41,19 +41,13 @@ Leveraging Spark due to the dataset's magnitude, we executed this filtering proc
 #### Filtering refinement
 
 During our analysis, we encountered a significant issue related to video selection based on keywords. We noticed that merely selecting videos with specific keywords occasionally led us to include content not directly addressing climate change. For instance, a video might mention a keyword in its title, description, or tags, but discuss an unrelated topic such as gaming scenarios involving deforestation on Minecraft or blogs talking about the pollution in self-care products.
-We found certain keywords to be more indicative of relevant content. Videos containing the phrase 'climate change' were more likely to genuinely address the topic compared to instances of 'pollution,' which might be tangentially related. Additionally, the category of the video influenced its accuracy; videos categorized under 'Science & Technology' were more likely to be on-topic than those under 'gaming', 'sport', or 'music'. Finally, we observed that the placement of keywords within the title, tags, or description affected their relevance differently. Notably, descriptions often contain varied subject matter, potentially diverging from the video's main theme.
-To address these challenges, we devised a new filtering method that involved assigning:
-- a weight from 1 to 5 to each keyword: A weight of 1 signifies a low probability of the video covering climate change upon mentioning the keyword, while a weight of 5 indicates high odds of climate change being the discussed topic. 
-- a weight to the title(3), tags(2), and descriptions(1): If a keyword appeared in both the title and the description, we only considered it from the title for accuracy assessment.
-- a category-weight dictionary. A video must attain a higher score than its category's requirement to be retained in the selection process.
-#
-By manipulating these parameters and conducting numerous random sampling experiments, we iteratively refined our filter. We are currently undergoing further analysis using p-value assessments to identify the most effective parameters. The numerical values present in the code may evolve as part of our ongoing effort to enhance our filtering methodology.
+We therefore used a google API to filter automatically for us the dataset [see more details in the new_main notebook]
 
 ### Analysis
 
 After acquiring our filtered dataset, our focus shifted towards investigating potential correlations between news or global events and public interest in the climate change topic on YouTube. We based our study on the ratio of uploaded videos specifically addressing climate change from 2010 to 2019.
 Our analyses were conducted across various timeframes: daily, weekly, and monthly rates of video uploads. These analyses were instrumental in identifying trends. Notably, we observed substantial volatility in these plots, highlighting distinct periods where the rate of videos addressing climate change surged, sometimes reaching tenfold increases.
-To establish connections between these peaks and significant events, we identified the 62 most pivotal climate events between 2010 and 2019, as identified by ChatGPT, ensuring their authenticity. We then assessed to the highest peak its event: the Paris Agreement Adopted at COP21 on the 2015-12-12.
+To establish connections between these peaks and significant events, we identified the 25 most pivotal climate events between 2010 and 2019, as identified by ChatGPT, ensuring their authenticity. We then assessed to the highest peak its event: the Paris Agreement Adopted at COP21 on the 2015-12-12.
 
 ## Proposed Timeline & Task Delivery Dates
 17/11/2023 - Deliver milestone 2
