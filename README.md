@@ -27,15 +27,9 @@ Climate change is a hot topic that needs to draw people's attention more than ev
 - Evolution in audience responses (particularly in the like/dislike ratio) as the subject matter transitioned from niche to more widely discussed
 
 
-## Methods
-
-
-### Dataset
-
-
 #### Storage
 Since the dataset is very large (97GB), we extracted it on a drive and performed a first filtering using pyspark.
-The resulting, more reasonable sized, filtered dataset can be found on this google drive : https://drive.google.com/drive/folders/1RSguLUcUIk9Rt2Bf6IchXuTbhEWtkC6u . There are also other datasets with useful features we extracted from the original dataset (video and view counts). You can download it all locally to run the notebooks without having to deal with the original large dataset.
+The resulting, more reasonable sized, filtered dataset can be found on this google drive : [drive](https://drive.google.com/drive/folders/1jhAelRILgdn7l_2YGD90MYTuH5fqjIt9) . There are also other datasets with useful features we extracted from the original dataset (video and view counts). You can download it all locally to run the notebooks without having to deal with the original large dataset.
 
 #### Pre-processing
 
